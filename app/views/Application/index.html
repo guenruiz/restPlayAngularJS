@@ -1,0 +1,15 @@
+#{extends 'main.html' /}
+
+<h2> Lista de Productos: </h2>
+
+  Nombre: <input ng-model="newProducto.nombre"/><br>
+  Precio: <input ng-model="newProducto.precio"/><br>
+          <button ng-click="agregar()"> Save </button>
+  <hr>
+  <div ng-repeat="miProducto in misProductos">
+    Nombre: {{miProducto.nombre}}<br>
+    Precio: {{miProducto.precio}}<br>
+    <button ng-click="update(miProducto)">Update</button>
+    <button ng-click="borrar(miProducto, $index)">Borrar</button>
+    <hr>
+  </div>

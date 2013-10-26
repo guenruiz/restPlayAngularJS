@@ -1,0 +1,168 @@
+25 Oct 2013 01:28:53,459 INFO  ~ Starting /home/action/rest
+25 Oct 2013 01:28:54,274 WARN  ~ You're running Play! in DEV mode
+25 Oct 2013 01:28:54,418 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+25 Oct 2013 01:29:21,266 ERROR ~ Unable to set localhost. This prevents creation of a GUID. Cause was: railsbox-24844: railsbox-24844: Name or service not known
+java.net.UnknownHostException: railsbox-24844: railsbox-24844: Name or service not known
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1466)
+	at net.sf.ehcache.Cache.<clinit>(Cache.java:200)
+	at net.sf.ehcache.config.ConfigurationHelper.createCache(ConfigurationHelper.java:302)
+	at net.sf.ehcache.config.ConfigurationHelper.createDefaultCache(ConfigurationHelper.java:218)
+	at net.sf.ehcache.CacheManager.configure(CacheManager.java:599)
+	at net.sf.ehcache.CacheManager.init(CacheManager.java:358)
+	at net.sf.ehcache.CacheManager.<init>(CacheManager.java:299)
+	at net.sf.ehcache.CacheManager.create(CacheManager.java:697)
+	at play.cache.EhCacheImpl.<init>(EhCacheImpl.java:31)
+	at play.cache.EhCacheImpl.newInstance(EhCacheImpl.java:41)
+	at play.cache.Cache.init(Cache.java:241)
+	at play.Play.start(Play.java:529)
+	at play.Play.detectChanges(Play.java:649)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at play.server.PlayHandler$NettyInvocation.init(PlayHandler.java:190)
+	at play.Invoker$Invocation.run(Invoker.java:276)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:230)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:292)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.net.UnknownHostException: railsbox-24844: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:894)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1286)
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1462)
+	... 24 more
+25 Oct 2013 01:29:21,896 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+25 Oct 2013 01:29:22,968 INFO  ~ Application 'rest' is now started !
+25 Oct 2013 01:48:31,253 ERROR ~ 
+
+@6g3mbcbb3
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/controllers/Application.java around line 37)
+The file /app/controllers/Application.java could not be compiled. Error raised is : Gson cannot be resolved to a type
+
+play.exceptions.CompilationException: Gson cannot be resolved to a type
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:676)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:520)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:281)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:324)
+	at play.Play.detectChanges(Play.java:632)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+25 Oct 2013 01:50:35,641 ERROR ~ 
+
+@6g3mbcbb4
+productos.1 action not found
+
+Action not found
+Action productos.1 could not be found. Error raised is Controller controllers.productos not found
+
+play.exceptions.ActionNotFoundException: Action productos.1 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.productos not found
+	... 3 more
+25 Oct 2013 01:50:36,120 ERROR ~ 
+
+@6g3mbcbb5
+productos.1 action not found
+
+Action not found
+Action productos.1 could not be found. Error raised is Controller controllers.productos not found
+
+play.exceptions.ActionNotFoundException: Action productos.1 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.productos not found
+	... 3 more
+25 Oct 2013 01:56:37,807 ERROR ~ 
+
+@6g3mbcbb6
+productos.3 action not found
+
+Action not found
+Action productos.3 could not be found. Error raised is Controller controllers.productos not found
+
+play.exceptions.ActionNotFoundException: Action productos.3 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.productos not found
+	... 3 more
+25 Oct 2013 02:04:52,587 ERROR ~ 
+
+@6g3mbcbb7
+productos.6 action not found
+
+Action not found
+Action productos.6 could not be found. Error raised is Controller controllers.productos not found
+
+play.exceptions.ActionNotFoundException: Action productos.6 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.productos not found
+	... 3 more
+25 Oct 2013 02:14:16,064 ERROR ~ 
+
+@6g3mbcbb8
+productos.6 action not found
+
+Action not found
+Action productos.6 could not be found. Error raised is Controller controllers.productos not found
+
+play.exceptions.ActionNotFoundException: Action productos.6 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.productos not found
+	... 3 more
+25 Oct 2013 02:43:15,254 ERROR ~ 
+
+@6g3mbcbb9
+productos.1 action not found
+
+Action not found
+Action productos.1 could not be found. Error raised is Controller controllers.productos not found
+
+play.exceptions.ActionNotFoundException: Action productos.1 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.productos not found
+	... 3 more
+25 Oct 2013 02:43:23,756 ERROR ~ 
+
+@6g3mbcbba
+productos.6 action not found
+
+Action not found
+Action productos.6 could not be found. Error raised is Controller controllers.productos not found
+
+play.exceptions.ActionNotFoundException: Action productos.6 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.productos not found
+	... 3 more
+25 Oct 2013 02:43:32,918 ERROR ~ 
+
+@6g3mbcbbb
+productos.7 action not found
+
+Action not found
+Action productos.7 could not be found. Error raised is Controller controllers.productos not found
+
+play.exceptions.ActionNotFoundException: Action productos.7 not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:599)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.productos not found
+	... 3 more
